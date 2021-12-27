@@ -1,0 +1,67 @@
+.banner {
+  width: 100%;
+  min-height: 480px;
+  margin-bottom: 200px;
+  background: linear-gradient(#E8F0E0, #DAEBCB);
+  position: relative;
+  border-radius: 20px;
+  padding: 65px 80px;
+  &-header {
+    display: flex;
+    font-size: 36px;
+    font-weight: 700;
+    color: $black;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  &-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+  }
+  &-list {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    &-item {
+      padding-left: 30px;
+      font-size: 20px;
+      font-weight: 400;
+      color: $text;
+      margin-bottom: 15px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/content/check.svg');
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-button {
+    padding: 24px 56px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #84C14A;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      background-color: lighten(#84C14A, 10%);
+    }
+  }
+}

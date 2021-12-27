@@ -9,7 +9,11 @@
 /* Colour palette */
 $black: #000;
 $white: #fff;
-$light-gray: #f1f1f1;
+$light-gray: #E1E1E1;
+
+$text: #222222;
+$subText: #444444;
+$lightText: #888888;
 
 $body-background-color: #333;
 $foreground-color: #fff;
@@ -17,4 +21,66 @@ $caption-color: #464646;
 $accent-color: #999;
 $link-color: #ec1f4e;
 
+$button-color: #E55D42;
+
+$button-color-view-more: #FDEEEB;
+$button-color-view-more-hover: #FADBD5;
+$button-color-view-more-pressed: #F7CAC1;
+$button-color-text-view-more: #E44D2F;
+
 /* Components */
+
+body {
+  background-color: #F6F6F6;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1376px;
+  width: 100%;
+}
+
+.button {
+  &-tool {
+    display: flex;
+  }
+  &-main {
+    cursor: pointer;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 80px;
+    border: 0;
+    border-radius: 8px 2px 2px 8px;
+    background-color: $button-color;
+    margin-right: 2px;
+    &:hover {
+      background-color: lighten($button-color, 10%) ;
+    }
+  }
+  &-sub {
+    cursor: pointer;
+    background-color: $button-color;
+    min-width: 72px;
+    border-radius: 2px 8px 8px 2px;
+    position: relative;
+    &:hover {
+      background-color: lighten($button-color, 10%) ;
+    }
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

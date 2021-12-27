@@ -1,0 +1,141 @@
+.tool-view {
+  padding-top: 90px;
+  padding-bottom: 120px;
+  & h1 {
+    margin-bottom: 16px;
+  }
+  & h2 {
+    margin-bottom: 48px;
+    max-width: 910px;
+  }
+}
+
+.tools-block {
+  margin-bottom: 120px;
+  &__header {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__subheader {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: $subText;
+    margin-bottom: 16px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 185px;
+    width: 100%;
+    background-color: $white;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid $white;
+    margin-bottom: 10px;
+    &:hover {
+      border: 2px solid $button-color;
+    }
+    & .tool-favorite {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    & .tool-icon {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tool-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  &-img {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+  }
+  &-header {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 34px;
+  }
+  &-list {
+    &-item {
+      font-size: 16px;
+      line-height: 24px;
+      color: $text;
+      margin-bottom: 28px;
+      position: relative;
+      padding-left: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__number {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        color: $button-color;
+        font-weight: 700;
+        border: 2px solid $button-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.advantage {
+  padding-top: 120px;
+  margin-bottom: 140px;
+  &-header {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  &-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    &-header {
+      font-size: 52px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+    &-description {
+      font-size: 20px;
+      line-height: 28px;
+      color: $text;
+    }
+  }
+}
