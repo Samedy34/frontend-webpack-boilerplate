@@ -50,8 +50,16 @@ ul ol {
 }
 
 //margin-top
+.mt-5 {
+  margin-top: 5px;
+}
+
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-25 {
+  margin-top: 25px;
 }
 
 .mt-50 {
@@ -63,12 +71,24 @@ ul ol {
   margin-bottom: 0;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
 
 .d-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-center {
@@ -94,4 +114,8 @@ h2 {
   color: $subText;
   font-size: 20px;
   line-height: 28px;
+}
+
+.w-33 {
+  width: 30%;
 }

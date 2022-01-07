@@ -3,6 +3,12 @@
   padding-bottom: 120px;
   & h1 {
     margin-bottom: 16px;
+    & svg {
+      cursor: pointer;
+      position: relative;
+      top: -10px;
+      right: 0;
+    }
   }
   & h2 {
     margin-bottom: 48px;
@@ -98,12 +104,26 @@
         width: 28px;
         height: 28px;
         text-align: center;
-        color: $button-color;
         font-weight: 700;
-        border: 2px solid $button-color;
         border-radius: 50%;
       }
     }
+  }
+  &-blue {
+    color: #319DF1;
+    border: 2px solid #319DF1;
+  }
+  &-red {
+    color: #EA6E55;
+    border: 2px solid #EA6E55;
+  }
+  &-grey {
+    color: #474747;
+    border: 2px solid #474747;
+  }
+  &-yellow {
+    color: #474747;
+    border: 2px solid #474747;
   }
 }
 

@@ -52,6 +52,10 @@ body {
 .button {
   &-tool {
     display: flex;
+    &-drag {
+      font-size: 14px;
+      color: $subText;
+    }
   }
   &-main {
     cursor: pointer;

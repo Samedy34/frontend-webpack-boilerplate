@@ -1,0 +1,69 @@
+.tool-page {
+  &-advantages {
+    justify-content: space-around;
+    color: $text;
+    padding-bottom: 100px;
+    &__title {
+      color: $black;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    &__item {
+      text-align: center;
+      font-size: 16px;
+      &:nth-child(1) {
+        margin-bottom: 65px;
+      }
+      & svg {
+        height: 48px;
+      }
+    }
+  }
+}
+
+.tool-questions {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+    & svg {
+
+    }
+  }
+  &-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 48px;
+  }
+  &-item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E2E2E2;
+    &:first-child {
+      border-top: 1px solid #E2E2E2;
+    }
+    &__q {
+      min-width: 280px;
+      margin-right: 48px;
+      font-size: 16px;
+      font-weight: 700;
+      color: $black;
+    }
+    &__a {
+      font-size: 16px;
+      font-weight: 400;
+      color: $text;
+    }
+  }
+}
