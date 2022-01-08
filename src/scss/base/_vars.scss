@@ -47,6 +47,12 @@ body {
   margin: 0 auto;
   max-width: 1376px;
   width: 100%;
+  @include md(1300) {
+    width: 90%;
+  }
+  @include md(400) {
+    width: 95%;
+  }
 }
 
 .button {
@@ -67,6 +73,14 @@ body {
     border-radius: 8px 2px 2px 8px;
     background-color: $button-color;
     margin-right: 2px;
+    @include md(680) {
+      padding: 20px 30px;
+      font-size: 20px;
+    }
+    @include md(350) {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
     &:hover {
       background-color: lighten($button-color, 10%) ;
     }
@@ -77,6 +91,9 @@ body {
     min-width: 72px;
     border-radius: 2px 8px 8px 2px;
     position: relative;
+    @include md(350) {
+      min-width: 60px;
+    }
     &:hover {
       background-color: lighten($button-color, 10%) ;
     }

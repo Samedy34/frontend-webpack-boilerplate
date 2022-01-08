@@ -6,6 +6,9 @@
   position: relative;
   border-radius: 20px;
   padding: 65px 80px;
+  @include md(1140) {
+    display: none;
+  }
   &-header {
     display: flex;
     font-size: 36px;
